@@ -9,6 +9,8 @@ import Divisas from '../components/Divisas.vue';
 
 export default {
   name: 'Home',
+  props:{
+  },
   components: {
     Divisas
   },
@@ -28,6 +30,7 @@ export default {
 
   methods:
   {
+ 
   async getSymbols() 
     {
       try {
@@ -44,6 +47,7 @@ export default {
 
     },
   },
+ 
 }
 </script>
 

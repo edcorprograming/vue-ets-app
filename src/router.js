@@ -12,12 +12,6 @@ export default new Router({
       component: Home
     },
     {
-      path: '/filterCurrency',
-      name: 'filter-currency',
-
-      component: () => import('./views/filterCurrency.vue')
-    },
-    {
       path: '/filterFamilyRisk',
       name: 'filter-family-risk',
 
