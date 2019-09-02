@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import DisplayPage from './views/DisplayPage.vue';
 
 Vue.use(Router)
 
@@ -12,10 +13,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/filterFamilyRisk',
-      name: 'filter-family-risk',
-
-      component: () => import('./views/filterFamilyRisk.vue')
+      path: '/DisplayPage/:id',
+      name: 'displayPage',
+      component: DisplayPage
     },
   ]
 })
