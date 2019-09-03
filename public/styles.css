@@ -3,12 +3,17 @@ html, body, #app, #wrapper, .row.max-height{
 }
 
 .chart{
-    padding: 5% 8%;
+    padding: 8% 8%;
 }
 
-#ets_logo{
+.ets_logo{
     margin-left: 15px;
     margin-top: 24px;
+    display: block;
+    background-image:url(logo-1.png);
+    background-repeat : no-repeat;
+    width:120px; /*width of your image*/
+    height:40px; /*height of your image*/
 }
 
 .second-menu{
@@ -67,6 +72,7 @@ html, body, #app, #wrapper, .row.max-height{
 }
 .row-big{
     height: 10%;
+    padding-left: 0;
 }
 
 
@@ -86,6 +92,14 @@ html, body, #app, #wrapper, .row.max-height{
 .divisas-row:hover .col-md-3{
     background: #02B5C4;
 }
+.divisas-row:hover .coin-icon, .divisas-row:hover .dashboard-icon{
+    fill: #ffffff;
+}
+
+
+.divisas-row:hover .family-risk-header, .divisas-row:hover .currency-header{
+    color: #ffffff;
+}
 
 .divisas-text{
     font-style: normal;
@@ -99,12 +113,18 @@ html, body, #app, #wrapper, .row.max-height{
     padding: 20px 16px;
 }
 
+.family-risk-header, .currency-header{
+    color: #000000;
+    padding-left: 10px;
+}
+
+
 .header-m{
     font-family: Open Sans Condensed;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    color: #000000;
+    color: #828282;
     line-height: 27px;
     letter-spacing: 0.15px;
     mix-blend-mode: normal;
@@ -130,6 +150,17 @@ html, body, #app, #wrapper, .row.max-height{
     letter-spacing: 0.25px;
     mix-blend-mode: normal;
 }
+
+.coin-icon{
+    fill: #b2b2b2;
+    padding-right: 5px;
+}
+.dashboard-icon{
+    fill: #b2b2b2;
+    padding-right: 5px;
+}
+
+
 
 .button-m{
     font-family: Open Sans;
@@ -157,12 +188,13 @@ html, body, #app, #wrapper, .row.max-height{
     font-style: normal;
     font-weight: bold;
     font-size: 10px;
-    color: #BDBDBD;
     line-height: 16px;
+    color: #BDBDBD;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     mix-blend-mode: normal;
     opacity: 0.87;
+
 }
 
 .button-no-style{
@@ -172,21 +204,43 @@ html, body, #app, #wrapper, .row.max-height{
 	padding: 0;
 	font: inherit;
 	cursor: pointer;
-    outline: inherit;
+    outline: none!important;
     margin-bottom: 8px;
     margin-top: 8px;
+}
+.padding-icons{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.padding-icons-v{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.full-page{
+    height:87%; 
+    width:100%; 
+    margin-left:0
+}
+
+.bottom-corner{
+    position: absolute;
+    width: 90%;
+    left: 0%;
+    top: 80%;
 }
 
 
 @media (min-width: 768px){
     .left-menu-items{
         position: absolute;
-        top: 45%;
+        top: 40%;
     }
     .right-menu-items{
-        position: absolute;
-        top: 45%;
-        left: 25%;
+        position: relative;
+        top: 35%;
+        left: 10%;
     }
 
     .left-menu-items p{
@@ -194,9 +248,10 @@ html, body, #app, #wrapper, .row.max-height{
     }
 
     .chart-title{
-        margin-top: 15%;
+        margin-top: 7%;
         text-align: center;
     }
+
 }
 
 @media (max-width: 767px){
@@ -205,10 +260,15 @@ html, body, #app, #wrapper, .row.max-height{
         margin-left: 10%;
     }
 
+    .hide-text{
+        display: none;
+    }
+
     .stay-on-top{
         position: fixed!important;
         z-index: 1000;
-        transform: translateX(15px)
+        
+        background: white;
     }
 
     .second-menu{
@@ -217,10 +277,28 @@ html, body, #app, #wrapper, .row.max-height{
 
     }
 
+    .left-menu-items{
+        margin-left: 0px!important;
+    }
+
     .items-displayer{
         margin-top: 260px;
         height: auto;
     }
 
+    .padding-mobile{
+        padding-bottom: 15%;
+    }
 
+    .ets_logo{
+        background-image:url(logo-2.png);
+    }
+    .graph{
+        margin-top:25%;
+        margin-left: 15px;
+    }
+
+    .chart-title{
+        margin-top: 5%;
+    }
 }
