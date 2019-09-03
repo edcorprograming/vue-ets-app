@@ -1,7 +1,23 @@
-html, body, #app, .row.max-height{
+html, body, #app, #wrapper, .row.max-height{
     height: 100%;
 }
 
+.chart{
+    padding: 5% 8%;
+}
+
+#ets_logo{
+    margin-left: 15px;
+    margin-top: 24px;
+}
+
+.second-menu{
+    background-color: #F2F2F2;
+}
+
+.gradient-color{
+    background:linear-gradient(90deg, #330066 0%, #02B5C4 100%)
+}
 
 .divisas-title{
     margin-top: 40px;
@@ -26,7 +42,14 @@ html, body, #app, .row.max-height{
     overflow-x: hidden;
 }
 
+#divisas::-webkit-scrollbar{
+	opacity: 0;
+}
 
+.items-displayer{
+    height: 100%;
+    padding-right:0;
+}
 
 .row-container{
     width: 90%;
@@ -41,6 +64,9 @@ html, body, #app, .row.max-height{
 
 .row-container:hover{
     text-decoration: none;
+}
+.row-big{
+    height: 10%;
 }
 
 
@@ -78,6 +104,7 @@ html, body, #app, .row.max-height{
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
+    color: #000000;
     line-height: 27px;
     letter-spacing: 0.15px;
     mix-blend-mode: normal;
@@ -98,6 +125,7 @@ html, body, #app, .row.max-height{
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
+    color: #000000;
     line-height: 20px;
     letter-spacing: 0.25px;
     mix-blend-mode: normal;
@@ -129,6 +157,7 @@ html, body, #app, .row.max-height{
     font-style: normal;
     font-weight: bold;
     font-size: 10px;
+    color: #BDBDBD;
     line-height: 16px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -143,7 +172,9 @@ html, body, #app, .row.max-height{
 	padding: 0;
 	font: inherit;
 	cursor: pointer;
-	outline: inherit;
+    outline: inherit;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 
@@ -151,7 +182,20 @@ html, body, #app, .row.max-height{
     .left-menu-items{
         position: absolute;
         top: 45%;
+    }
+    .right-menu-items{
+        position: absolute;
+        top: 45%;
         left: 25%;
+    }
+
+    .left-menu-items p{
+        margin-left: 60px;
+    }
+
+    .chart-title{
+        margin-top: 15%;
+        text-align: center;
     }
 }
 
@@ -160,4 +204,23 @@ html, body, #app, .row.max-height{
         width: 80%;
         margin-left: 10%;
     }
+
+    .stay-on-top{
+        position: fixed!important;
+        z-index: 1000;
+        transform: translateX(15px)
+    }
+
+    .second-menu{
+        top: 146px;
+        background-color: #fff
+
+    }
+
+    .items-displayer{
+        margin-top: 260px;
+        height: auto;
+    }
+
+
 }
